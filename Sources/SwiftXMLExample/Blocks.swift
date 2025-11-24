@@ -7,7 +7,7 @@ func transformBlocks_step(during execution: Execution, document: XDocument) {
     blockTransformation().execute(inDocument: document)
 }
 
-func blockTransformation() -> XTransformation {
+fileprivate func blockTransformation() -> XTransformation {
     XTransformation {
         
         XRule(forElements: "paragraph") { element in

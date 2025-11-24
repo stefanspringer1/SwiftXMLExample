@@ -7,7 +7,7 @@ func transformInlines_step(during execution: Execution, document: XDocument, sho
     inlineTransformation(shortNames: shortNames).execute(inDocument: document)
 }
 
-func inlineTransformation(shortNames: Bool = true) -> XTransformation {
+fileprivate func inlineTransformation(shortNames: Bool = true) -> XTransformation {
     XTransformation {
         
         XRule(forElements: "emphasis") { element in
