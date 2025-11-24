@@ -1,4 +1,4 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,16 +6,16 @@ import PackageDescription
 let package = Package(
     name: "SwiftXMLExample",
     platforms: [
-        .iOS(.v16),
         .macOS(.v15),
-        .tvOS(.v16),
-        .watchOS(.v9),
+        .iOS(.v17),
+        .tvOS(.v17),
+        .watchOS(.v10),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.2"),
-        .package(url: "https://github.com/stefanspringer1/Pipeline.git", from: "1.0.32"),
-        .package(url: "https://github.com/stefanspringer1/PipelineLogging.git", from: "0.0.7"),
-        .package(url: "https://github.com/stefanspringer1/SwiftXML.git", from: "12.0.5"),
+        .package(url: "https://github.com/stefanspringer1/Pipeline.git", from: "1.0.33"),
+        .package(url: "https://github.com/stefanspringer1/PipelineLogging.git", from: "0.0.8"),
+        .package(url: "https://github.com/stefanspringer1/SwiftXML.git", from: "12.0.6"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
