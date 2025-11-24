@@ -4,7 +4,7 @@ import SwiftXML
 
 @Step
 func transformBlocks_step(during execution: Execution, document: XDocument) {
-    inlineTransformation().execute(inDocument: document)
+    blockTransformation().execute(inDocument: document)
 }
 
 func blockTransformation() -> XTransformation {
