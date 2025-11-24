@@ -1,6 +1,5 @@
 import Foundation
-import Pipeline
-import SwiftXML
+import SwiftXMLComplete
 
 @Step
 func transform_step(during execution: Execution, document: XDocument, shortNames: Bool = true) {

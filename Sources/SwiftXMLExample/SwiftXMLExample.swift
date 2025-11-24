@@ -1,7 +1,5 @@
 import ArgumentParser
-import Pipeline
-import PipelineLogging
-import SwiftXML
+import SwiftXMLComplete
 
 @main struct SwiftXMLExample: AsyncParsableCommand {
     

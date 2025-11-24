@@ -13,9 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.2"),
-        .package(url: "https://github.com/stefanspringer1/Pipeline.git", from: "1.0.33"),
-        .package(url: "https://github.com/stefanspringer1/PipelineLogging.git", from: "0.0.8"),
-        .package(url: "https://github.com/stefanspringer1/SwiftXML.git", from: "12.0.6"),
+        .package(url: "https://github.com/stefanspringer1/SwiftXMLComplete.git", from: "0.0.3"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -24,9 +22,7 @@ let package = Package(
             name: "SwiftXMLExample",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
-                "Pipeline",
-                "PipelineLogging",
-                "SwiftXML",
+                "SwiftXMLComplete",
             ]
         ),
     ]
