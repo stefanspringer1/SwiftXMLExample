@@ -19,11 +19,10 @@ import SwiftXML
     
     func run() async throws {
         
-        let fileLogger = try FileLogger<ExecutionLogEntry,InfoType>(usingFile: log)
-        
-        let printer = ExecutionLogEntryPrinter()
-        
-        let logger = MultiLogger(fileLogger, printer)
+        let logger = MultiLogger(
+            try FileLogger<ExecutionLogEntry,InfoType>(usingFile: log),
+            ExecutionLogEntryPrinter(),
+        )
         
         let executionEventProcessor = ExecutionEventProcessorForLogger(
             withMetaDataInfo: "SwiftXMLExample",
