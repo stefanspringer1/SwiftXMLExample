@@ -19,10 +19,10 @@ import SwiftXMLComplete
         
         let logger = MultiLogger(
             try FileLogger<ExecutionLogEntry,InfoType>(usingFile: log),
-            ExecutionLogEntryPrinter(),
+            LogEntryPrinter(),
         )
         
-        let executionEventProcessor = ExecutionEventProcessorForLogger(
+        let executionEventProcessor = EventProcessorForLogger(
             withMetaDataInfo: "SwiftXMLExample",
             logger: logger,
             excutionInfoFormat: ExecutionInfoFormat(

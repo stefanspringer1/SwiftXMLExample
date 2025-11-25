@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.2"),
-        .package(url: "https://github.com/stefanspringer1/SwiftXMLComplete.git", from: "0.0.4"),
+        .package(url: "https://github.com/stefanspringer1/SwiftXMLComplete.git", from: "0.0.6"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
